@@ -1,0 +1,276 @@
+{
+  "section": "LF2-LF3-LF5",
+  "title": "Equations, Graphs & Models of Linear Functions",
+  "learningObjective": "LF2: Determine an equation for a line when given two points on the line and when given the slope and one point on the line. Express these equations in slope-intercept or point-slope form and determine the slope and y-intercept of a line given an equation. LF3: Graph a line given its equation or some combination of characteristics, such as points on the graph, a table of values, the slope, or the intercepts. LF5: Build linear models from verbal descriptions, and use the models to establish conclusions, including by contextualizing the meaning of slope and intercept parameters.",
+  "faqs": [
+    {
+      "id": "faq-1",
+      "category": "conceptual",
+      "question": "What is slope-intercept form, and what do m and b represent?",
+      "answer": "Slope-intercept form writes a linear function as f(x) = mx + b (or y = mx + b). The m is the slope — the constant rate of change you learned about in LF1. The b is the y-intercept — the starting value, or the output when x = 0. This form is popular because both key features of the line are visible at a glance, right in the equation.<div class=\"example-box\"><div class=\"label\">Example</div><p class=\"math-line\">\\( f(x) = 3x - 4 \\)</p><p class=\"math-line\">Slope: \\( m = 3 \\) &nbsp;&nbsp; y-intercept: \\( b = -4 \\), so the point \\( (0, -4) \\) is on the line.</p></div>"
+    },
+    {
+      "id": "faq-2",
+      "category": "conceptual",
+      "question": "What is point-slope form, and when would I use it instead of slope-intercept form?",
+      "answer": "Point-slope form is \\( y - y_0 = m(x - x_0) \\), where \\( (x_0, y_0) \\) is any known point on the line and m is the slope. You reach for this form when you know a point that isn't the y-intercept — it lets you write an equation immediately without first solving for b. It's a stepping stone: you can always rearrange it into slope-intercept form afterward if you need to."
+    },
+    {
+      "id": "faq-3",
+      "category": "conceptual",
+      "question": "What is standard form of a line, and how is it different from the other forms?",
+      "answer": "Standard form is \\( Ax + By = C \\), where A, B, and C are constants. Unlike slope-intercept or point-slope form, standard form doesn't show the slope or intercepts directly — you have to do a little algebra to extract them. Its advantage shows up later in the course when working with systems of equations, where having x and y on the same side is more convenient."
+    },
+    {
+      "id": "faq-4",
+      "category": "conceptual",
+      "question": "What are the equations of horizontal and vertical lines, and why do they look different from other lines?",
+      "answer": "A horizontal line has the form \\( y = k \\) (a constant), since every point on it shares the same y-value no matter what x is. A vertical line has the form \\( x = h \\) (a constant), since every point shares the same x-value no matter what y is. They look different because they're the two special cases from LF1: horizontal lines have slope 0, and vertical lines have undefined slope — so neither one fits neatly into y = mx + b.<div class=\"graph-wrap\"><svg viewBox=\"0 0 380 200\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"170\" x2=\"170\" y2=\"170\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"55\" y1=\"20\" x2=\"55\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"60\" y1=\"90\" x2=\"165\" y2=\"90\" stroke=\"#1a6b6b\" stroke-width=\"3\"/><text x=\"70\" y=\"75\" font-size=\"11\" fill=\"#1a6b6b\" font-weight=\"600\">y = 3</text><line x1=\"250\" y1=\"170\" x2=\"330\" y2=\"170\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"290\" y1=\"20\" x2=\"290\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"1\"/><line x1=\"290\" y1=\"30\" x2=\"290\" y2=\"165\" stroke=\"#D4622A\" stroke-width=\"3\"/><text x=\"245\" y=\"25\" font-size=\"11\" fill=\"#D4622A\" font-weight=\"600\">x = 2</text></svg></div><p class=\"graph-caption\">Every point on the left line has y = 3. Every point on the right line has x = 2.</p>"
+    },
+    {
+      "id": "faq-5",
+      "category": "conceptual",
+      "question": "What information do I need to write the equation of a line?",
+      "answer": "You always need two pieces of information: a slope and a point. Sometimes both are handed to you directly (slope and a point). Sometimes you're given two points instead — in that case, your first job is to calculate the slope between them using the slope formula from LF1, and then you're right back to \"slope and a point,\" using either of the two points you were given."
+    },
+    {
+      "id": "faq-6",
+      "category": "conceptual",
+      "question": "What is a linear model, and how is it different from just an equation?",
+      "answer": "A linear model is a linear equation that represents a real situation — the variables and constants have actual meaning tied to a context, not just abstract x's and y's. Instead of \"y = mx + b,\" you might see something like A(w) = 13 + 1.5w, representing the amount of money in a piggy bank after w weeks. The math is identical to any other linear equation — what changes is that every number now tells a story."
+    },
+    {
+      "id": "faq-7",
+      "category": "conceptual",
+      "question": "What do the slope and y-intercept mean when a line is modeling a real-world situation?",
+      "answer": "The y-intercept (b) represents the starting value — whatever the situation looks like before any change happens, often at \"time zero.\" The slope (m) represents the rate of change per unit of input — how much the output goes up or down each time the input increases by 1. Reading these two numbers together tells the whole story of the situation without needing to graph anything."
+    },
+    {
+      "id": "faq-8",
+      "category": "sticking-points",
+      "question": "How do I write an equation of a line if I'm given two points?",
+      "answer": "First, use the slope formula from LF1 to find m from your two points. Then plug that slope and either one of your two points into point-slope form. From there, simplify into slope-intercept form if needed.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">Points: \\( (2, 5) \\) and \\( (6, 13) \\)</p><p class=\"math-line\">Step 1 — Slope: \\( m = \\dfrac{13-5}{6-2} = \\dfrac{8}{4} = 2 \\)</p><p class=\"math-line\">Step 2 — Point-slope (using (2,5)): \\( y - 5 = 2(x-2) \\)</p><p class=\"math-line\">Step 3 — Simplify: \\( y = 2x + 1 \\)</p></div>"
+    },
+    {
+      "id": "faq-9",
+      "category": "sticking-points",
+      "question": "How do I write an equation of a line if I'm given the slope and one point?",
+      "answer": "This is the most direct case — plug the slope and point straight into point-slope form, then simplify to slope-intercept form if that's the format you need.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">Slope \\( m = -3 \\), point \\( (4, 2) \\)</p><p class=\"math-line\">Point-slope: \\( y - 2 = -3(x - 4) \\)</p><p class=\"math-line\">Simplify: \\( y - 2 = -3x + 12 \\) &rarr; \\( y = -3x + 14 \\)</p></div>"
+    },
+    {
+      "id": "faq-10",
+      "category": "sticking-points",
+      "question": "Why do I get the same final equation in slope-intercept form even if I start point-slope form using a different point?",
+      "answer": "Because there's only one line that passes through both points with that slope — the point-slope equation just looks different depending on which point you plug in, but once you simplify all the way to slope-intercept form, both versions collapse into the exact same equation. This is a good way to double-check your work: solve using each point separately, and confirm you land on the same y = mx + b both times."
+    },
+    {
+      "id": "faq-11",
+      "category": "sticking-points",
+      "question": "How do I convert an equation from point-slope form to slope-intercept form?",
+      "answer": "Distribute the slope on the right side, then isolate y by adding or subtracting whatever's needed to get y alone on the left.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( y - 3 = \\dfrac{1}{2}(x - 8) \\)</p><p class=\"math-line\">Distribute: \\( y - 3 = \\dfrac{1}{2}x - 4 \\)</p><p class=\"math-line\">Add 3: \\( y = \\dfrac{1}{2}x - 1 \\)</p></div>"
+    },
+    {
+      "id": "faq-12",
+      "category": "sticking-points",
+      "question": "How do I convert between standard form and slope-intercept form?",
+      "answer": "To go from standard form to slope-intercept form, solve the equation for y. To go the other direction, move all the variable terms to one side and the constant to the other, then clear any fractions if needed.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">Standard form: \\( 2x + 4y = 12 \\)</p><p class=\"math-line\">Solve for y: \\( 4y = -2x + 12 \\) &rarr; \\( y = -\\dfrac{1}{2}x + 3 \\)</p></div>"
+    },
+    {
+      "id": "faq-13",
+      "category": "sticking-points",
+      "question": "How do I graph a line if I'm only given its equation in slope-intercept form?",
+      "answer": "Plot the y-intercept (0, b) first — that's your starting point. Then use the slope as rise over run to find a second point: move up/down by the rise and right by the run. Draw a straight line through both points.<div class=\"graph-wrap\"><svg viewBox=\"0 0 360 240\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"30\" y1=\"200\" x2=\"340\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"80\" y1=\"20\" x2=\"80\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><circle cx=\"80\" cy=\"140\" r=\"5\" fill=\"#D4622A\"/><text x=\"20\" y=\"135\" font-size=\"11\" fill=\"#D4622A\" font-weight=\"600\">(0, b)</text><line x1=\"80\" y1=\"140\" x2=\"80\" y2=\"90\" stroke=\"#1a6b6b\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><line x1=\"80\" y1=\"90\" x2=\"160\" y2=\"90\" stroke=\"#1a6b6b\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/><text x=\"88\" y=\"115\" font-size=\"11\" fill=\"#1a6b6b\" font-weight=\"600\">rise</text><text x=\"105\" y=\"85\" font-size=\"11\" fill=\"#1a6b6b\" font-weight=\"600\">run</text><circle cx=\"160\" cy=\"90\" r=\"5\" fill=\"#0a3f52\"/><line x1=\"40\" y1=\"180\" x2=\"280\" y2=\"40\" stroke=\"#0a3f52\" stroke-width=\"3\"/></svg></div><p class=\"graph-caption\">Start at the y-intercept, then use rise/run from the slope to plot a second point, and draw the line through both.</p>"
+    },
+    {
+      "id": "faq-14",
+      "category": "sticking-points",
+      "question": "How do I graph a line if I'm only given its equation in point-slope form?",
+      "answer": "Plot the known point (x₀, y₀) directly from the equation — that's your starting point instead of the y-intercept. From there, use the slope exactly like before: rise over run to find a second point, then draw the line."
+    },
+    {
+      "id": "faq-15",
+      "category": "sticking-points",
+      "question": "How do I graph a line if I'm given two points, a table, or intercepts instead of an equation?",
+      "answer": "In every case, your job is the same: find (or identify) at least two points that belong on the line, plot them, and connect them with a straight edge. With two points, just plot them directly. With a table, pick any two rows and treat them as ordered pairs. With intercepts, plot the x-intercept and y-intercept — those are two points on the line just like any other."
+    },
+    {
+      "id": "faq-16",
+      "category": "sticking-points",
+      "question": "How do I build a linear model from a word problem — where do I find the slope and the starting value?",
+      "answer": "Look for a starting amount — a value given before any change happens — that becomes your b. Then look for a repeated, constant change per unit of time (or whatever the input represents) — that becomes your m. Once you've identified both, plug them into f(x) = mx + b.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\"Ellie has $13 in her piggy bank, and gets an additional $1.50 each week.\"</p><p class=\"math-line\">Starting value: \\( b = 13 \\) &nbsp;&nbsp; Rate of change: \\( m = 1.50 \\)</p><p class=\"math-line\">Model: \\( A(w) = 13 + 1.50w \\), where w is the number of weeks.</p></div>"
+    },
+    {
+      "id": "faq-17",
+      "category": "sticking-points",
+      "question": "How do I use a linear model to predict an output given an input, or an input given an output?",
+      "answer": "To predict an output, evaluate the model — plug in the given input value and simplify (same as evaluating any function, back from FN2). To predict an input, solve the model — set the model equal to the given output value and solve algebraically for the input variable.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">Model: \\( A(w) = 13 + 1.50w \\)</p><p class=\"math-line\"><strong>Evaluate</strong> at \\( w=5 \\): \\( A(5) = 13+1.50(5) = 20.50 \\)</p><p class=\"math-line\" style=\"margin-top:0.5rem;\"><strong>Solve</strong> for \\( A(w)=40 \\): \\( 40=13+1.50w \\) &rarr; \\( w=18 \\)</p></div>"
+    },
+    {
+      "id": "faq-18",
+      "category": "connections",
+      "question": "How does everything from LF1 (slope, average rate of change) connect to what we're doing here?",
+      "answer": "Everything here builds directly on slope. Writing an equation of a line is really just packaging up a slope and a point into a formula. Graphing a line is just visualizing that same slope as rise over run. Linear modeling is just applying that constant rate of change to a real situation. LF1 gave you the number; LF2, LF3, and LF5 are all about doing things with that number."
+    },
+    {
+      "id": "faq-19",
+      "category": "connections",
+      "question": "Why does building linear models matter beyond this course?",
+      "answer": "Linear modeling is one of the most widely used tools across every field that works with data — budgeting, physics, business forecasting, health trends. Any situation with a constant rate of change can be modeled this way, and even situations that aren't perfectly linear are often approximated with a linear model over a short interval. The skill of translating a written description into an equation is exactly what you'll keep doing with every new function family for the rest of the course."
+    }
+  ],
+  "videos": [
+    {
+      "id": "vid-1",
+      "title": "Find the Equation of a Line Given Slope and a Point",
+      "url": "https://youtu.be/vut5b2fRQQ0",
+      "description": "Writing an equation in point-slope and slope-intercept form when given the slope and one point.",
+      "category": "equations",
+      "relatedFaqs": [
+        "faq-2",
+        "faq-9"
+      ]
+    },
+    {
+      "id": "vid-2",
+      "title": "Find the Equation of a Line Given Two Points",
+      "url": "https://youtu.be/ndRpJxdmZJI",
+      "description": "Writing an equation in point-slope and slope-intercept form when given two points on the line.",
+      "category": "equations",
+      "relatedFaqs": [
+        "faq-8",
+        "faq-10"
+      ]
+    },
+    {
+      "id": "vid-3",
+      "title": "Determine a Linear Equation Given Slope and a Point (Slope-Intercept Form)",
+      "url": "https://youtu.be/URYnKqEctgc",
+      "description": "A second worked example writing an equation directly in slope-intercept form.",
+      "category": "equations",
+      "relatedFaqs": [
+        "faq-1",
+        "faq-9"
+      ]
+    },
+    {
+      "id": "vid-4",
+      "title": "Graph a Line and Identify Slope and Intercepts (Fraction Slope)",
+      "url": "https://youtu.be/N6lEPh11gk8",
+      "description": "Graphing a line from its equation and identifying the slope and intercepts, including with a fractional slope.",
+      "category": "graphing",
+      "relatedFaqs": [
+        "faq-13"
+      ]
+    },
+    {
+      "id": "vid-5",
+      "title": "Find the Equation of a Line in Slope-Intercept Form Given the Graph",
+      "url": "https://www.youtube.com/watch?v=mmWf_oLTNSQ",
+      "description": "Working backward from a graph to write the line's equation in slope-intercept form.",
+      "category": "graphing",
+      "relatedFaqs": [
+        "faq-15"
+      ]
+    },
+    {
+      "id": "vid-6",
+      "title": "Determine the x- and y-Intercepts of a Linear Equation",
+      "url": "https://youtu.be/vmaMT188ChA",
+      "description": "Finding the x- and y-intercepts algebraically from an equation in slope-intercept form.",
+      "category": "graphing",
+      "relatedFaqs": [
+        "faq-15"
+      ]
+    },
+    {
+      "id": "vid-7",
+      "title": "Find the Slope of a Line From a Graph (Positive Slope)",
+      "url": "https://www.youtube.com/watch?v=JqeOivUbYGk",
+      "description": "Reading slope directly from a graph using rise and run.",
+      "category": "graphing",
+      "relatedFaqs": [
+        "faq-13",
+        "faq-14"
+      ]
+    },
+    {
+      "id": "vid-8",
+      "title": "Savings Linear Function Application (Slope & Intercept Meaning)",
+      "url": "https://youtu.be/JMQSdRFJ1S4",
+      "description": "A real-world savings example showing how to interpret slope and y-intercept in context.",
+      "category": "modeling",
+      "relatedFaqs": [
+        "faq-6",
+        "faq-7"
+      ]
+    },
+    {
+      "id": "vid-9",
+      "title": "Linear Equation Application: Cost of a Rental Car",
+      "url": "https://youtu.be/H8KR3w2nXqs",
+      "description": "Building a linear model from a word problem and using it to answer real-world questions.",
+      "category": "modeling",
+      "relatedFaqs": [
+        "faq-16",
+        "faq-17"
+      ]
+    }
+  ],
+  "apps": [
+    {
+      "id": "app-1",
+      "title": "Line Studio",
+      "url": "https://linestudio172.netlify.app/",
+      "description": "Build equations of lines from two points or a slope and point (Build It), work backward from a graph to an equation (Read It), and convert between slope-intercept, point-slope, and standard form (Convert It). Includes a Presenter Mode for whole-class discussion with click-to-reveal steps.",
+      "relatedFaqs": [
+        "faq-1",
+        "faq-2",
+        "faq-3",
+        "faq-8",
+        "faq-9",
+        "faq-10",
+        "faq-11",
+        "faq-12",
+        "faq-13",
+        "faq-14",
+        "faq-15"
+      ]
+    }
+  ],
+  "prompts": {
+    "guided": [
+      {
+        "id": "prompt-1",
+        "title": "Practice Writing Equations",
+        "prompt": "I'm learning to write equations of lines. Give me a slope and a point, and walk me through writing the equation in point-slope form, then simplifying to slope-intercept form. Then give me three more practice problems of increasing difficulty, including at least one where I'm given two points instead."
+      },
+      {
+        "id": "prompt-2",
+        "title": "Understand Why All Three Forms Exist",
+        "prompt": "I'm learning about slope-intercept form, point-slope form, and standard form for lines. Can you give me the same line's equation in all three forms, and explain in plain language why someone would choose one form over another depending on the situation?"
+      },
+      {
+        "id": "prompt-3",
+        "title": "Practice Graphing From Different Starting Points",
+        "prompt": "I'm learning to graph lines. Give me a line's equation in slope-intercept form and ask me to describe how I'd graph it step by step. Then give me the same practice starting from point-slope form, and then from just two points, so I can compare the process each way."
+      },
+      {
+        "id": "prompt-4",
+        "title": "Build a Linear Model From a Word Problem",
+        "prompt": "I'm learning to build linear models from word problems. Give me a short real-world scenario (like a savings account, a phone plan, or a rental cost) with a starting amount and a constant rate of change. Ask me to identify the slope and y-intercept, write the model, and then use it to answer a prediction question."
+      },
+      {
+        "id": "prompt-5",
+        "title": "Connect Slope to Everything We've Built",
+        "prompt": "I've learned about slope and average rate of change, writing equations of lines, graphing lines, and building linear models. Can you help me see how all of these connect — like a story that starts with slope and ends with a real-world model? Walk me through one example that touches all of these ideas."
+      }
+    ],
+    "open": [
+      {
+        "id": "open-1",
+        "title": "Create Your Own",
+        "prompt": "Use the AI tool of your choice. Start by describing what you're confused about or curious about from Sections LF2 (Equations of Lines), LF3 (Graphs of Lines), or LF5 (Linear Models). Ask the AI to help you explore that idea. Share what you learned and what surprised you."
+      }
+    ]
+  }
+}
