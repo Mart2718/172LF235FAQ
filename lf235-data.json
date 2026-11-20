@@ -215,6 +215,67 @@
         "faq-16",
         "faq-17"
       ]
+    },
+    {
+      "id": "vid-10",
+      "title": "Ex 1: Given Linear Equation in Standard Form, Write in Slope-Intercept Form to Graph",
+      "url": "https://youtu.be/Ex9lxdoiwOk",
+      "description": "Rewrites a line in standard form Ax + By = C as y = mx + b to read off the slope and y-intercept, then graphs it.",
+      "category": "equations",
+      "relatedFaqs": [
+        "faq-12"
+      ]
+    },
+    {
+      "id": "vid-11",
+      "title": "Ex: Write a Linear Equation From Point Slope Form to Slope Intercept Form",
+      "url": "https://youtu.be/6TAkuXMGNq0",
+      "description": "Distributes and simplifies to turn a point-slope equation into slope-intercept form.",
+      "category": "equations",
+      "relatedFaqs": [
+        "faq-11"
+      ]
+    },
+    {
+      "id": "vid-12",
+      "title": "Graphing horizontal and vertical lines",
+      "url": "https://youtu.be/iSgftOjXIfw",
+      "description": "Graphs x = c as a vertical line and y = c as a horizontal line, and explains why each looks the way it does.",
+      "category": "graphing",
+      "relatedFaqs": [
+        "faq-4"
+      ]
+    },
+    {
+      "id": "vid-13",
+      "title": "Ex: Graph a Linear Equation in Point-Slope Form",
+      "url": "https://youtu.be/-YYPjQwv1Aw",
+      "description": "Graphs a line from point-slope form by plotting the point and using the slope as rise over run.",
+      "category": "graphing",
+      "relatedFaqs": [
+        "faq-14"
+      ]
+    },
+    {
+      "id": "vid-14",
+      "title": "Graph Linear Equations Given the Intercepts",
+      "url": "https://youtu.be/MK58EPQaVlk",
+      "description": "Graphs a line by finding and plotting its x- and y-intercepts, then connecting them.",
+      "category": "graphing",
+      "relatedFaqs": [
+        "faq-15"
+      ]
+    },
+    {
+      "id": "vid-15",
+      "title": "Ex: Model the Balance of a Gift Card Using a Linear Function (m and b given)",
+      "url": "https://youtu.be/5F4Mj0ffVbA",
+      "description": "Writes a decreasing linear model for a gift card balance and explains the slope and starting value in context.",
+      "category": "modeling",
+      "relatedFaqs": [
+        "faq-16",
+        "faq-7"
+      ]
     }
   ],
   "apps": [
